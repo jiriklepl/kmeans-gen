@@ -1,7 +1,7 @@
 # KMeans data generator
 
 ```sh
-./kmeans-gen.py -h
+./kmeans-gen.py --help
 ```
 
 ```text
@@ -15,13 +15,13 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  -s SEED, --seed SEED  random seed
-  -m MAX, --max MAX     maximum absolute value for cluster center dimensions
+  -s SEED, --seed SEED  random seed (default: None)
+  -m MAX, --max MAX     maximum absolute value for cluster center dimensions (default: 1000)
   -n POINTS, --points POINTS
-                        the number of generated points
-  -v, --validate        perform validation
-  -p, --print_centers   perform validation
-  -r, --reflections     include a reflection for each sampled point
+                        the number of generated points (default: 1000)
+  -v, --validate        perform validation (default: False)
+  -p, --print_centers   perform validation (default: False)
+  -r, --reflections     include a reflection for each sampled point (default: False)
 
 output: csv list of points which should be clustered
 ```

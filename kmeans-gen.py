@@ -12,7 +12,8 @@ parser = argparse.ArgumentParser(
     prog='kmeans-gen',
     description='Generate nontrivial test data with unique solution for the k-means algorithm',
     epilog='output: csv list of points which should be clustered',
-    add_help=True)
+    add_help=True,
+    formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
 parser.add_argument('clusters', type=int, help='the number of clusters')
 parser.add_argument('dimensions', type=int, help='the number of dimensions of the space')
